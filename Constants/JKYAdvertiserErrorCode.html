@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>JKYAdvertiserErrorCode Constants Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Jacky Advertiser iOS SDK </a></h1>
+				<a id="developerHome" href="../index.html">Jacky Media</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">JKYAdvertiserErrorCode Constants Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="JKYAdvertiserErrorCode Constants Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">JKYAdvertiserErrorCode Constants Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">JKYAdvertiserManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+                    
+                    
+                    <h3 class="subsubtitle method-title">JKYAdvertiserErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>All errors returned by methods of this SDK are in the <code>JKYAdvertiserErrorDomain</code> error domain
+and have one of the following error codes.</p>
+
+<p>In most cases, the errors contain a human-readable description in <code>NSError</code>&rsquo;s <code>localizedDescription</code>
+(although that description is only provided in English - thus, you should not display those error
+descriptions to your users - they are rather intended to give developers using this SDK a better
+chance to understand what&rsquo;s wrong).</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, JKYAdvertiserErrorCode ) {<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorNetworkOperationFailed</a> = 0,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorNoAffiliateInstall</a> = 1,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorMissingAppCredentials</a> = 100,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorInvalidAPIKey</a> = 101,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorInvalidAPISecret</a> = 102,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorMissingAdvertisingIdentifier</a> = 200,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorMissingParameter</a> = 201,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorInvalidCustomEventName</a> = 300,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorInvalidCustomEventUserInfo</a> = 301,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorNoSuchCustomEvent</a> = 302,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">JKYAdvertiserErrorEventNotVerified</a> = 303,<br/>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorNetworkOperationFailed"></a><code>JKYAdvertiserErrorNetworkOperationFailed</code></dt>
+<dd>
+
+
+<p>A generic network error. This can be caused by missing connectivity, timeout, or an error in the Jacky backend.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorNoAffiliateInstall"></a><code>JKYAdvertiserErrorNoAffiliateInstall</code></dt>
+<dd>
+
+
+<p>Event tracking disabled, because this is no installation that comes through the Jacky network</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorMissingAppCredentials"></a><code>JKYAdvertiserErrorMissingAppCredentials</code></dt>
+<dd>
+
+
+<p>No app credentials (API key and API secret) specified</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorInvalidAPIKey"></a><code>JKYAdvertiserErrorInvalidAPIKey</code></dt>
+<dd>
+
+
+<p>Invalid API key. Please double-check the key you provided to -startWithAPIKey:andAPISecret:.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorInvalidAPISecret"></a><code>JKYAdvertiserErrorInvalidAPISecret</code></dt>
+<dd>
+
+
+<p>Invalid API secret. Please double-check the secret you provided to -startWithAPIKey:andAPISecret:.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorMissingAdvertisingIdentifier"></a><code>JKYAdvertiserErrorMissingAdvertisingIdentifier</code></dt>
+<dd>
+
+
+<p>Advertising identifier not available. This is expected behavior on iOS version &lt; 6.0. If running on iOS 6.0+, make sure the AdSupport framework is linked.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorMissingParameter"></a><code>JKYAdvertiserErrorMissingParameter</code></dt>
+<dd>
+
+
+<p>One or more mandatory parameters are missing</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorInvalidCustomEventName"></a><code>JKYAdvertiserErrorInvalidCustomEventName</code></dt>
+<dd>
+
+
+<p>The specified custom event name is not valid</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorInvalidCustomEventUserInfo"></a><code>JKYAdvertiserErrorInvalidCustomEventUserInfo</code></dt>
+<dd>
+
+
+<p>The specified user info for the custom event is not valid.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorNoSuchCustomEvent"></a><code>JKYAdvertiserErrorNoSuchCustomEvent</code></dt>
+<dd>
+
+
+<p>The specified custom event does not exist. Please define custom events in your advertiser console prior to tracking them.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="JKYAdvertiserErrorEventNotVerified"></a><code>JKYAdvertiserErrorEventNotVerified</code></dt>
+<dd>
+
+
+<p>The tracked event exists, but has not yet been verified. Please track this event once with test mode enabled, to verify it and allow tracking.</p>
+
+    
+
+    
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">JKYAdvertiserManager.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <code class="declared-in-ref">JKYAdvertiserManager.h</code><br />
+                    </div>				
+                    
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Jacky Media. All rights reserved. (Last updated: 2014-06-05)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
